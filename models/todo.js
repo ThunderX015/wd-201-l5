@@ -7,13 +7,11 @@ module.exports = (sequelize, DataTypes) => {
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
-    static associate(models) {
-      // define association here
-    }
 
     static async addTask(params) {
       return await Todo.create(params);
     }
+
     static async showList() {
       console.log("My Todo list \n");
 
